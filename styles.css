@@ -25,8 +25,3 @@
     color: #ffb800;
 }
 
-.star-rating label:hover ~ input:checked ~ label,
-.star-rating input:checked ~ label:hover,
-.star-rating input:checked ~ label:hover ~ label {
-    color: #ffb800;
-}
