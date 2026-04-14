@@ -1,1 +1,32 @@
-/* Пиши стили тут */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 40px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    cursor: pointer;
+    color: rgba(204, 204, 204, 0); 
+    transition: color 0.2s ease-in-out;
+    -webkit-text-stroke: 1px black; 
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffb800; 
+}
+
+.star-rating input:checked ~ label {
+    color: #ffb800;
+}
+
+.star-rating label:hover ~ input:checked ~ label,
+.star-rating input:checked ~ label:hover,
+.star-rating input:checked ~ label:hover ~ label {
+    color: #ffb800;
+}
